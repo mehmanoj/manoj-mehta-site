@@ -1,22 +1,26 @@
-# Manoj Mehta Resume Website
+# Manoj Mehta Portfolio Site
 
-Simple static personal website generated from resume content.
+Static portfolio website for GitHub Pages.
 
 ## Files
-- `index.html` – single-page website
-- `styles.css` – styling
-- `Manoj_Mehta_Resume.pdf` – downloadable resume
+- `index.html`
+- `styles.css`
+- `script.js`
+- `profile.png`
+- `favicon.png`
+- `favicon.ico`
+- `og-preview.png`
+- `Manoj_Mehta_Resume.pdf`
+- `CNAME`
 
-## How to publish
-### Option 1: GitHub Pages
-1. Create a GitHub repository.
-2. Upload these files to the repository root.
-3. Go to **Settings > Pages**.
-4. Set source to **Deploy from branch** and choose `main`.
-5. Add your custom domain `manoj-mehta.com` in GitHub Pages settings.
-6. In GoDaddy DNS, point the domain to GitHub Pages.
+## Deploy
+1. Replace your repo contents with these files.
+2. Commit and push to `main`.
+3. GitHub Pages will auto-deploy.
 
-### Option 2: Vercel / Netlify
-1. Upload the folder contents.
-2. Set the project root to this folder.
-3. Connect the custom domain in project settings.
+## Commands
+```bash
+git add .
+git commit -m "Refresh portfolio design"
+git push origin main
+```
