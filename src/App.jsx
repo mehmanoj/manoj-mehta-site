@@ -79,10 +79,28 @@ const skills = [
 ];
 
 const contactLinks = [
-  { href: 'mailto:meh.manoj@gmail.com', label: 'meh.manoj@gmail.com' },
-  { href: 'tel:+19496915115', label: '949-691-5115' },
-  { href: 'https://linkedin.com/in/manoj-mehta-4486302', label: 'LinkedIn', external: true },
-  { href: 'https://github.com/mehmanoj', label: 'GitHub', external: true },
+  {
+    href: 'mailto:meh.manoj@gmail.com',
+    label: 'meh.manoj@gmail.com',
+    icon: 'fa-solid fa-envelope',
+  },
+  {
+    href: 'tel:+19496915115',
+    label: '949-691-5115',
+    icon: 'fa-solid fa-phone',
+  },
+  {
+    href: 'https://linkedin.com/in/manoj-mehta-4486302',
+    label: 'LinkedIn',
+    icon: 'fa-brands fa-linkedin',
+    external: true,
+  },
+  {
+    href: 'https://github.com/mehmanoj',
+    label: 'GitHub',
+    icon: 'fa-brands fa-github',
+    external: true,
+  },
 ];
 
 const sectionLabelClass = 'text-xs font-semibold uppercase tracking-[0.18em] text-blue-600';
@@ -98,8 +116,20 @@ function App() {
             <div className='flex flex-col gap-8 lg:flex-row lg:items-start lg:justify-between'>
               <div className='max-w-3xl'>
                 <p className='text-sm font-semibold tracking-[0.12em] text-blue-600 uppercase'>Senior Front-End Architect · Principal UI Platform Engineer</p>
+
                 <h1 className='mt-3 text-4xl font-bold tracking-tight text-slate-950 sm:text-5xl'>Manoj Mehta</h1>
+
                 <p className='mt-4 max-w-2xl text-base leading-7 text-slate-600 sm:text-lg'>Architecting scalable UI platforms, micro-frontend ecosystems, and developer experience tooling for large enterprise engineering organizations.</p>
+
+                {/* Contact Row */}
+                <div className='mt-6 flex flex-wrap gap-6 text-sm font-medium text-slate-700'>
+                  {contactLinks.map((item) => (
+                    <a key={item.label} href={item.href} className='flex items-center gap-2 hover:text-blue-600' {...(item.external ? { target: '_blank', rel: 'noopener noreferrer' } : {})}>
+                      <i className={`${item.icon} text-blue-600`} />
+                      {item.label}
+                    </a>
+                  ))}
+                </div>
 
                 <div className='mt-6 flex flex-wrap gap-3 text-sm text-slate-600'>
                   <span className='rounded-full border border-slate-200 bg-slate-50 px-3 py-1.5'>Irvine, California</span>
@@ -114,16 +144,13 @@ function App() {
                 <a href='/Manoj_Mehta_Resume3.docx' download className='inline-flex items-center justify-center rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm font-semibold text-slate-900 hover:bg-slate-50'>
                   Download DOCX Resume
                 </a>
-                <a href='#contact' className='inline-flex items-center justify-center rounded-xl border border-slate-200 bg-slate-50 px-4 py-3 text-sm font-semibold text-slate-900 hover:bg-slate-100'>
-                  Contact
-                </a>
               </div>
             </div>
 
             <div className='mt-8 grid gap-3 sm:grid-cols-2 xl:grid-cols-4'>
               {impactMetrics.map((item) => (
                 <div key={item.label} className='rounded-2xl border border-slate-200 bg-slate-50 px-4 py-4'>
-                  <div className='text-2xl font-bold tracking-tight text-slate-950'>{item.value}</div>
+                  <div className='text-2xl font-bold tracking-tight text-[#0F9F6E]'>{item.value}</div>
                   <div className='mt-1 text-sm leading-6 text-slate-600'>{item.label}</div>
                 </div>
               ))}
@@ -138,19 +165,8 @@ function App() {
             </div>
 
             <div className='px-6 py-8 sm:px-8 lg:px-8'>
-              <p className={sectionLabelClass}>Contact</p>
-              <div className='mt-4 space-y-3 text-sm text-slate-700'>
-                {contactLinks.map((item) => (
-                  <a key={item.label} href={item.href} className='block font-medium hover:text-blue-600' {...(item.external ? { target: '_blank', rel: 'noopener noreferrer' } : {})}>
-                    {item.label}
-                  </a>
-                ))}
-              </div>
-
-              <div className='mt-8'>
-                <p className={sectionLabelClass}>Career Objective</p>
-                <p className='mt-4 text-sm leading-7 text-slate-700'>Seeking senior architect or principal IC roles focused on front-end platforms, developer experience, scalable UI systems, and modern engineering delivery practices.</p>
-              </div>
+              <p className={sectionLabelClass}>Career Objective</p>
+              <p className='mt-4 text-sm leading-7 text-slate-700'>Seeking senior architect or principal IC roles focused on front-end platforms, developer experience, scalable UI systems, and modern engineering delivery practices.</p>
             </div>
           </div>
         </section>
