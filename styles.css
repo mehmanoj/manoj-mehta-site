@@ -150,7 +150,6 @@ img {
 
 .hero-content {
   padding-top: 2.2rem;
-  // max-width: 860px;
 }
 
 .eyebrow,
@@ -165,7 +164,6 @@ img {
 .section-label {
   margin-bottom: 0.9rem;
   font-size: 0.95rem;
-  color: var(--accent);
 }
 
 h1,
@@ -198,16 +196,25 @@ h3 {
 }
 
 .hero-copy,
+.hero-tagline,
 .timeline-content,
 .project-card p,
 .skill-card p,
-.contact-card p {
+.contact-card p,
+.objective-card p {
   color: var(--muted);
 }
 
+.hero-tagline {
+  font-size: 1.06rem;
+  font-weight: 600;
+  max-width: 900px;
+  margin-bottom: 0.85rem;
+}
+
 .hero-copy {
-  // max-width: 760px;
   font-size: 1.18rem;
+  max-width: 940px;
 }
 
 .hero-actions {
@@ -255,7 +262,7 @@ h3 {
   padding-left: 1.15rem;
   margin: 0;
   color: var(--muted);
-  max-width: 720px;
+  max-width: 760px;
 }
 
 main {
@@ -273,7 +280,8 @@ main {
   backdrop-filter: blur(6px);
 }
 
-.two-col {
+.two-col,
+.objective-card {
   display: grid;
   grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
   gap: 4rem;
@@ -300,7 +308,8 @@ main {
 .project-card,
 .skill-card,
 .contact-card,
-.timeline-item {
+.timeline-item,
+.objective-card {
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(249, 251, 255, 0.98));
   border: 1px solid var(--card-border);
   border-radius: var(--radius);
@@ -310,7 +319,8 @@ main {
 .stat-card,
 .project-card,
 .skill-card,
-.timeline-item {
+.timeline-item,
+.objective-card {
   padding: 1.6rem;
 }
 
@@ -369,7 +379,8 @@ main {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
-  .two-col {
+  .two-col,
+  .objective-card {
     gap: 2.5rem;
   }
 
@@ -390,6 +401,7 @@ main {
   }
 
   .two-col,
+  .objective-card,
   .timeline-item,
   .contact-card,
   .project-grid,
@@ -480,7 +492,8 @@ main {
   .project-card,
   .skill-card,
   .timeline-item,
-  .contact-card {
+  .contact-card,
+  .objective-card {
     padding: 1.25rem;
     border-radius: 18px;
   }
