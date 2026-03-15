@@ -135,7 +135,6 @@ img {
   display: flex;
   gap: 2rem;
   padding-top: 0.45rem;
-  flex-wrap: wrap;
 }
 
 .nav-links a,
