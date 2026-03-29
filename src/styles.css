@@ -546,3 +546,46 @@ main {
     margin-top: 56px;
   }
 }
+
+.project-image-shell {
+  position: relative;
+  overflow: hidden;
+  border-radius: 16px;
+  margin-bottom: 16px;
+  border: 1px solid rgba(100, 255, 218, 0.08);
+  box-shadow: 0 0 0 rgba(100, 255, 218, 0);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.project-image-shell:hover {
+  transform: translateY(-2px);
+  border-color: rgba(100, 255, 218, 0.14);
+  box-shadow: 0 0 30px rgba(100, 255, 218, 0.08);
+}
+
+.tile-image {
+  margin-bottom: 0;
+  object-fit: cover;
+}
+
+.tile-image-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom, rgba(10, 25, 47, 0.08), rgba(10, 25, 47, 0.42));
+  pointer-events: none;
+}
+
+.detail-media-card {
+  margin-top: 30px;
+  overflow: hidden;
+  border-radius: 22px;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.02);
+  box-shadow: var(--shadow);
+}
+
+.detail-media {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
