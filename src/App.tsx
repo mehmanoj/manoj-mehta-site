@@ -341,10 +341,6 @@ function App() {
               );
             })}
           </nav>
-
-          <div className="theme-dot" aria-hidden="true">
-            ◔
-          </div>
         </header>
 
         <main>{renderPage()}</main>
