@@ -40,10 +40,10 @@ export type ContactLink = {
 };
 
 export const impactMetrics: Metric[] = [
-  { value: '20+', label: 'Years building web platforms' },
-  { value: '30%', label: 'UI effort reduced via AI workflows' },
-  { value: '20%', label: 'Page-load improvement on key platforms' },
-  { value: '0→1', label: 'Prototype-to-product execution' },
+  { value: '20+', label: 'Years building enterprise web platforms' },
+  { value: '6+', label: 'Teams enabled through modular front-end architecture' },
+  { value: '$10M+', label: 'Annual transaction volume supported on commerce work' },
+  { value: '30%', label: 'Faster deployments through stronger CI/CD and platform patterns' },
 ];
 
 export const achievements: string[] = [

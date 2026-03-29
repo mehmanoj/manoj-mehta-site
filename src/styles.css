@@ -1,16 +1,16 @@
 :root {
-  --page-bg: #05153d;
-  --panel-bg: #1c2c48;
-  --panel-bg-soft: #27395a;
-  --line: rgba(255, 255, 255, 0.08);
-  --line-strong: rgba(255, 255, 255, 0.14);
-  --text: #eef2f7;
-  --muted: #a8b4c8;
-  --muted-soft: #8290a8;
-  --pill: #334763;
-  --tag: #3b4f6d;
-  --accent: #dbeafe;
-  --shadow: 0 24px 60px rgba(0, 0, 0, 0.24);
+  --page-bg: #0a192f;
+  --panel-bg: #112240;
+  --panel-bg-soft: #1b2f52;
+  --line: rgba(129, 155, 158, 0.18);
+  --line-strong: rgba(129, 155, 158, 0.26);
+  --text: #f8fbff;
+  --muted: #b6c2cf;
+  --muted-soft: #819b9e;
+  --pill: #1b2b47;
+  --tag: #17304f;
+  --accent: #64ffda;
+  --shadow: 0 28px 70px rgba(2, 12, 27, 0.45);
 }
 
 * {
@@ -44,7 +44,7 @@ img {
 .site-chrome {
   min-height: 100vh;
   padding: 0 20px;
-  background: linear-gradient(90deg, #041031 0, #041031 16%, var(--panel-bg) 16%, var(--panel-bg) 84%, #041031 84%, #041031 100%);
+  background: linear-gradient(90deg, #071426 0, #071426 15%, var(--panel-bg) 15%, var(--panel-bg) 85%, #071426 85%, #071426 100%);
 }
 
 .site-frame {
@@ -53,8 +53,8 @@ img {
   min-height: 100vh;
   padding: 30px 54px 28px;
   background: var(--panel-bg);
-  border-left: 1px solid rgba(255, 255, 255, 0.03);
-  border-right: 1px solid rgba(255, 255, 255, 0.03);
+  border-left: 1px solid rgba(100, 255, 218, 0.05);
+  border-right: 1px solid rgba(100, 255, 218, 0.05);
 }
 
 .site-header,
@@ -93,8 +93,9 @@ img {
   gap: 2px;
   padding: 4px;
   border-radius: 999px;
-  background: var(--pill);
-  border: 1px solid var(--line);
+  background: rgba(23, 48, 79, 0.88);
+  border: 1px solid rgba(129, 155, 158, 0.22);
+  backdrop-filter: blur(10px);
 }
 
 .nav-pill a,
@@ -107,12 +108,12 @@ img {
   padding: 10px 16px;
   border-radius: 999px;
   color: var(--text);
-  opacity: 0.86;
+  opacity: 0.82;
 }
 
 .nav-pill a.active,
 .nav-pill a:hover {
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(100, 255, 218, 0.08);
   opacity: 1;
 }
 
@@ -125,7 +126,7 @@ img {
   border-radius: 999px;
   background: var(--pill);
   border: 1px solid var(--line);
-  color: var(--muted);
+  color: var(--muted-soft);
 }
 
 main {
@@ -142,9 +143,9 @@ main {
 .listing-hero h1,
 .detail-page h1 {
   margin: 0;
-  font-size: clamp(2.6rem, 5.6vw, 4.55rem);
-  line-height: 0.98;
-  letter-spacing: -0.05em;
+  font-size: clamp(2.75rem, 5.2vw, 4.2rem);
+  line-height: 1.02;
+  letter-spacing: -0.04em;
   font-weight: 700;
 }
 
@@ -157,7 +158,7 @@ main {
 .listing-content p,
 .uses-card li,
 .site-footer p {
-  color: var(--muted);
+  color: var(--muted-soft);
   line-height: 1.8;
   font-size: 1.02rem;
 }
@@ -201,8 +202,8 @@ main {
   width: 6px;
   height: 6px;
   border-radius: 999px;
-  background: var(--text);
-  box-shadow: 0 0 0 8px rgba(255, 255, 255, 0.03);
+  background: #b87333;
+  box-shadow: 0 0 0 8px rgba(184, 115, 51, 0.12);
 }
 
 .timeline-rail::after {
@@ -252,7 +253,7 @@ main {
 .uses-card ul {
   margin: 18px 0 0;
   padding-left: 18px;
-  color: var(--muted);
+  color: var(--muted-soft);
   line-height: 1.8;
 }
 
@@ -263,7 +264,7 @@ main {
 .hero-photo-card {
   overflow: hidden;
   border-radius: 28px;
-  background: linear-gradient(160deg, #445568, #26334b);
+  background: linear-gradient(160deg, #203354, #12233e 58%, #0f1f38);
   transform: rotate(3deg);
   box-shadow: var(--shadow);
 }
@@ -323,12 +324,13 @@ main {
   display: block;
   font-size: 1.7rem;
   letter-spacing: -0.04em;
+  color: var(--accent);
 }
 
 .metric-card span {
   display: block;
   margin-top: 8px;
-  color: var(--muted);
+  color: var(--muted-soft);
   line-height: 1.5;
 }
 
@@ -407,7 +409,7 @@ main {
   padding: 7px 10px;
   border-radius: 999px;
   background: var(--tag);
-  color: #d7deea;
+  color: #d8f6ef;
   font-size: 0.76rem;
 }
 
@@ -445,11 +447,14 @@ main {
 .impact-banner {
   margin-top: 28px;
   padding: 20px 22px;
+  border-color: rgba(184, 115, 51, 0.35);
+  background: linear-gradient(180deg, rgba(184, 115, 51, 0.08), rgba(255, 255, 255, 0.02));
 }
 
 .impact-banner strong {
   display: block;
   margin-bottom: 8px;
+  color: #ffd3a8;
 }
 
 .big-gap {
@@ -470,7 +475,7 @@ main {
   gap: 18px;
   flex-wrap: wrap;
   font-size: 0.9rem;
-  color: var(--muted);
+  color: var(--muted-soft);
 }
 
 .site-footer p {

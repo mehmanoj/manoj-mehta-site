@@ -42,27 +42,27 @@ const navItems = [
 
 const workExperience = [
   {
-    date: 'Current',
-    role: 'Senior UX Engineer / Front-End Architect',
+    date: '2018 — Present',
+    role: 'Front-End Architect',
     company: 'Publicis Sapient',
     body:
-      'Leading hands-on frontend architecture, UX prototyping, reusable systems, and enterprise delivery for large-scale digital products.',
+      'Lead technical architecture and hands-on frontend delivery for large-scale enterprise platforms across telecommunications, retail, and AI-powered collaboration use cases.',
     bullets: [
-      'Drives AI-first workflows using Slingshot, Figma-to-code, custom AI skills, and prompt-driven development.',
-      'Builds high-fidelity demos that help product, design, and engineering teams validate ideas quickly.',
-      'Focuses on intelligent interfaces, reusable component systems, and scalable UX implementation.',
+      'Modernized legacy systems into React and TypeScript micro-frontend platforms, enabling independent deployments across 6+ teams.',
+      'Architected digital commerce workflows with React, Next.js, and GraphQL supporting $10M+ in annual transaction volume.',
+      'Standardized CI/CD, testing, and reusable UI patterns to improve deployment speed, delivery consistency, and developer productivity.',
     ],
   },
   {
-    date: '2011 — Current',
-    role: 'Front-End Architect / Senior UI Engineer',
+    date: '2011 — 2018',
+    role: 'Senior UI Engineer',
     company: 'Publicis Sapient',
     body:
-      'Built modular enterprise web applications across multiple industries with a strong emphasis on usability, performance, accessibility, and delivery quality.',
+      'Led frontend development for financial services and enterprise platforms, building scalable single-page applications with strong focus on usability, accessibility, and maintainability.',
     bullets: [
-      'Improved page-load performance by about 20% on key platforms.',
-      'Introduced reusable UI systems and stronger testing practices using Jest, RTL, and Cypress.',
-      'Partnered closely with design and product teams to turn concepts into production-ready interfaces.',
+      'Developed accessible component patterns and design systems that improved consistency across applications.',
+      'Introduced CI/CD and testing practices that reduced regressions and strengthened release confidence.',
+      'Contributed to backend integrations in Java and SQL when product delivery required full-stack collaboration.',
     ],
   },
   {
@@ -70,11 +70,11 @@ const workExperience = [
     role: 'Consultant',
     company: 'Fidelity International',
     body:
-      'Developed financial applications, dashboards, and visualization-heavy tools that helped stakeholders understand complex data more clearly.',
+      'Built financial applications, dashboards, and data visualization tools that helped stakeholders interpret business data and make clearer decisions.',
     bullets: [
-      'Worked across business and engineering to turn requirements into scalable solutions.',
-      'Built decision-support interfaces with strong attention to clarity and usability.',
-      'Established an early foundation in data-rich product experiences and enterprise delivery.',
+      'Translated business requirements into scalable technical solutions across enterprise systems.',
+      'Delivered data-rich applications with emphasis on clarity, usability, and decision support.',
+      'Built a strong base in Java, SQL, and enterprise product delivery.',
     ],
   },
 ];
@@ -341,6 +341,10 @@ function App() {
               );
             })}
           </nav>
+
+          <div className="theme-dot" aria-hidden="true">
+            ◔
+          </div>
         </header>
 
         <main>{renderPage()}</main>
@@ -365,21 +369,21 @@ function AboutPage() {
     <div className="page-stack">
       <section className="about-hero">
         <div className="about-copy">
-          <h1 className="text-4xl md:text-5xl font-semibold leading-tight">
-            I design and build AI-powered user experiences that scale.
-          </h1>
-          <p className="mt-4 text-lg text-gray-400 max-w-xl">
-            Senior UX Engineer and frontend architect focused on rapid prototyping, intelligent workflows, and scalable UI systems.
+          <h1>I build scalable UI platforms and front-end architecture that help enterprise teams move faster.</h1>
+          <p>
+            I’m a senior software engineer and hands-on frontend architect based in Irvine, with 20+ years of
+            experience building scalable web platforms across telecommunications, financial services, retail,
+            and Fortune 500 environments.
           </p>
           <p>
-            My work sits at the intersection of design, engineering, and product direction. I prototype
-            high-fidelity experiences, translate concepts into believable implementations, and help teams
-            validate ideas with working software instead of ambiguity.
+            My work centers on platform engineering: modernizing front-end stacks, shaping reusable UI systems,
+            improving developer productivity, and building architecture that supports faster delivery without
+            sacrificing performance, accessibility, or maintainability.
           </p>
           <p>
-            Lately, I’ve been especially focused on AI-first UX engineering: using Slingshot, prompt-driven
-            workflows, and Figma-to-code patterns to accelerate prototyping, reduce manual effort, and
-            explore intelligent interfaces that improve usability and decision-making.
+            Across my recent work, that has included React and TypeScript micro-frontend platforms, digital
+            commerce systems, AI-powered collaboration experiences, stronger CI/CD pipelines, and testing and
+            component-library foundations that make large teams more effective.
           </p>
 
           <section className="section-blockless">
@@ -484,7 +488,11 @@ function ProjectsPage() {
       <div className="card-grid">
         {projectDetails.map((item) => (
           <article key={item.slug} className="project-tile">
-            <div className="tile-image tile-image-gradient" />
+            <img
+              className="tile-image"
+              src={`/project-${item.slug}.png`}
+              alt={item.title}
+            />
             <h2>
               <a href={`/projects/${item.slug}/`} data-route="true">
                 {item.title}
