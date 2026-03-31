@@ -6,21 +6,15 @@ function SummarySection() {
       <p className={sectionLabelClass}>Professional Summary</p>
 
       <p className="mt-4 text-[15px] leading-7 text-slate-700 sm:text-base">
-        Senior Front-End Architect and platform engineering leader with ~20 years
-        of experience designing and delivering enterprise-scale digital platforms
-        across financial services, telecom, retail, and healthcare. Specialized in
-        React/TypeScript ecosystems, micro-frontend architectures, GraphQL
-        integrations, and developer platform engineering that enable large
-        engineering organizations to build and ship faster.
+        Senior frontend engineer and hands-on architect with 20+ years of experience building
+        scalable enterprise web applications, AI-powered interfaces, and data-intensive dashboards
+        across financial services and other large-scale industries.
       </p>
 
       <p className="mt-4 text-[15px] leading-7 text-slate-700 sm:text-base">
-        Hands-on architect who enjoys solving complex UI architecture challenges
-        while enabling strong developer experience through reusable platforms,
-        component libraries, and scalable integration patterns. Looking to apply
-        this experience in a senior architect or principal individual contributor
-        role focused on building scalable front-end platforms and improving
-        developer experience.
+        Specialized in React, Next.js, and TypeScript, with strong experience across configurable
+        analytics interfaces, chat-driven workflows, design-to-code execution, component systems,
+        performance optimization, accessibility, and AI-assisted delivery workflows.
       </p>
     </div>
   );

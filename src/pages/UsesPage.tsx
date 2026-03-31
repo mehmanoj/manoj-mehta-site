@@ -6,8 +6,8 @@ export function UsesPage() {
   return (
     <div className="narrow-page">
       <ListingHero
-        title="What I use to design, prototype, build, and ship."
-        description="This page mirrors the structure of the reference site, but the content is tailored to my current frontend, UX engineering, AI, and delivery stack."
+        title="What I use to design, build, test, and ship modern frontend systems."
+        description="This page reflects the stack, workflows, and engineering patterns behind my recent work in AI-powered interfaces, analytics dashboards, and scalable enterprise frontend delivery."
       />
 
       <div className="uses-list">

@@ -40,104 +40,104 @@ export type ContactLink = {
 };
 
 export const impactMetrics: Metric[] = [
-  { value: '20+', label: 'Years building enterprise web platforms' },
-  { value: '6+', label: 'Teams enabled through modular front-end architecture' },
-  { value: '$10M+', label: 'Annual transaction volume supported on commerce work' },
-  { value: '30%', label: 'Faster deployments through stronger CI/CD and platform patterns' },
+  { value: '20+', label: 'Years in frontend engineering and architecture' },
+  { value: '30%', label: 'Lower UI effort through AI-assisted workflows' },
+  { value: '20%', label: 'Performance improvement on production web apps' },
+  { value: '4', label: 'Named fintech clients across analytics-heavy delivery' },
 ];
 
 export const achievements: string[] = [
-  'Built user-centric web platforms across financial services, retail, telecom, healthcare, and enterprise support environments.',
-  'Reduced UI development effort by ~30% through AI-assisted workflows, automated code generation, and reusable engineering patterns.',
-  'Improved performance of production web applications by ~20% through front-end optimization, modular architecture, and delivery discipline.',
-  'Built reusable component systems and front-end foundations that accelerated prototyping, consistency, and cross-team delivery.',
-  'Presented high-fidelity interactive prototypes to stakeholders to clarify product direction and turn abstract concepts into working software.',
-  'Bridged design and engineering through Figma-to-code implementation, rapid prototyping, and hands-on architecture leadership.',
+  'Built scalable enterprise web applications, AI-powered interfaces, and data-intensive dashboards across financial services and other large-scale industries.',
+  'Reduced UI development effort by about 30% by driving adoption of AI-assisted workflows, automated code-generation approaches, and reusable engineering patterns.',
+  'Delivered data-intensive UI solutions for Capital Group, Franklin Templeton, Empower, and Citigroup using Recharts and D3.js.',
+  'Improved web application performance by about 20% through frontend optimization, scalable architecture, and maintainable delivery practices.',
+  'Translated business requirements and Figma designs into production-ready interfaces aligned with usability, accessibility, and business goals.',
+  'Built configurable dashboard experiences, component libraries, and design systems that supported consistency across distributed teams.',
 ];
 
 export const experienceBullets: string[] = [
-  'Translate ambiguous product ideas into production-grade experiences with React, TypeScript, Next.js, and modern front-end architecture.',
-  'Prototype copilots, workflow automation patterns, and AI-assisted interfaces that reduce friction and improve user decision-making.',
-  'Partner tightly with product managers and designers to move from concept to validated UX through working demos instead of static discussion.',
-  'Build reusable design systems, component libraries, and architecture patterns that scale across teams and channels.',
-  'Lead hands-on engineering across UX architecture, accessibility, testing, performance, and developer enablement.',
-  'Accelerate delivery through AI-first workflows including Slingshot, GitHub Copilot, Figma-to-code, and prompt-driven engineering tools.',
+  'Build React, Next.js, and TypeScript interfaces for enterprise-grade products with strong performance, accessibility, and delivery discipline.',
+  'Design AI-powered, chat-driven workflows and dashboard experiences that help users analyze data and make faster decisions.',
+  'Partner with business stakeholders, product teams, and engineers to translate requirements into scalable frontend and platform solutions.',
+  'Use Recharts, D3.js, and reusable visualization patterns to support analytics-heavy workflows and configurable reporting experiences.',
+  'Lead hands-on engineering across architecture, design-to-code implementation, testing, performance, and component-system development.',
+  'Accelerate delivery through AI-assisted workflows including Sapient Slingshot, GitHub Copilot, and repeatable engineering patterns.',
 ];
 
 export const platforms: TextItem[] = [
   {
-    title: 'AI-first UX engineering workflows',
-    body: 'Built repeatable workflows combining Figma-to-code, Jira-integrated development, custom AI skills, and rapid prototype loops.',
+    title: 'AI product UI engineering',
+    body: 'Design and build chat-driven workflows, copilot-style interactions, and analytics-heavy interfaces that support enterprise decision-making.',
   },
   {
-    title: 'Reusable front-end systems',
-    body: 'Designed component libraries and scalable UI patterns that improved consistency and shortened the path from idea to release.',
+    title: 'Financial analytics and dashboards',
+    body: 'Build Recharts and D3.js visualization layers, configurable dashboards, and data-rich workflows for financial services clients.',
   },
   {
-    title: 'Enterprise-grade product interfaces',
-    body: 'Delivered data-rich and workflow-heavy user interfaces with strong attention to usability, performance, and maintainability.',
+    title: 'Scalable frontend systems',
+    body: 'Develop component libraries, design systems, and modular frontend architecture that improve consistency and team velocity.',
   },
   {
-    title: 'Copilot-style support experiences',
-    body: 'Explored agentic and assistive UX patterns to automate troubleshooting, reduce support friction, and improve task completion.',
+    title: 'Business-to-technical translation',
+    body: 'Work closely with stakeholders to turn requirements, workflows, and Figma designs into production-ready web applications.',
   },
 ];
 
 export const projects: Project[] = [
   {
-    title: 'AI-First UX Engineering Initiative',
-    subtitle: 'Publicis Sapient · Current focus',
-    body: 'Leading AI-first development approaches that use Slingshot, automation, and prototype-led delivery to accelerate UI work and validate product ideas faster.',
+    title: 'AI Product UI Engineering',
+    subtitle: 'Publicis Sapient · Current project',
+    body: 'Building AI-powered interfaces, chat-driven workflows, and analytics dashboards that reduce friction and improve decision-making for enterprise support use cases.',
   },
   {
-    title: 'Enterprise Support Copilot Concepts',
-    subtitle: 'AI-assisted user workflows',
-    body: 'Prototyped copilot-style interfaces and automated troubleshooting flows that improved user efficiency and reduced dependence on static documentation.',
-  },
-  {
-    title: 'Modular Web Platforms',
-    subtitle: 'Fortune 500 delivery across industries',
-    body: 'Architected scalable web applications and reusable front-end frameworks supporting high-traffic environments and multi-team delivery.',
+    title: 'Frontend Architecture for Enterprise Platforms',
+    subtitle: 'Fortune 500 product delivery',
+    body: 'Leading modular frontend architecture, reusable component systems, and cross-team delivery patterns for large-scale enterprise platforms.',
   },
   {
     title: 'Financial Analytics & Visualization',
-    subtitle: 'Consulting and platform delivery',
-    body: 'Built dashboards and data-visualization experiences that made complex information easier to interpret and act on for business stakeholders.',
+    subtitle: 'Capital Group, Franklin Templeton, Empower, Citigroup',
+    body: 'Delivered scalable dashboards and analytics interfaces using Recharts and D3.js to make complex financial data easier to interpret and act on.',
+  },
+  {
+    title: 'Design-to-Code Delivery',
+    subtitle: 'Figma to production-ready UI',
+    body: 'Translate product and UX designs into scalable, accessible interfaces aligned with business requirements and modern frontend standards.',
   },
 ];
 
 export const caseStudies: CaseStudy[] = [
   {
-    title: 'AI-assisted UX delivery',
-    outcome: 'Faster prototyping and ~30% lower UI effort',
+    title: 'AI-assisted delivery acceleration',
+    outcome: 'About 30% lower UI effort and faster delivery cycles',
     summary:
-      'Introduced an AI-first workflow that combined prompt-driven development, design-to-code acceleration, and reusable implementation patterns.',
+      'Introduced AI-assisted workflows that combined Sapient Slingshot, automated code-generation approaches, and reusable implementation patterns.',
     bullets: [
-      'Used Slingshot, GitHub Copilot, and Figma-to-code workflows to shorten iteration cycles.',
-      'Built working demos early so product and design teams could validate concepts with less ambiguity.',
-      'Turned repeatable prompts and workflows into team-level leverage instead of one-off experimentation.',
+      'Used repeatable AI workflows to reduce manual frontend effort and speed up implementation.',
+      'Built working solutions early so stakeholders could validate flows through concrete interfaces.',
+      'Turned experimentation into practical delivery leverage for ongoing enterprise work.',
     ],
   },
   {
-    title: 'Support workflow modernization',
-    outcome: 'Lower user friction and better self-service',
+    title: 'AI-powered support experiences',
+    outcome: 'Improved user efficiency and less reliance on manual troubleshooting',
     summary:
-      'Designed AI-driven troubleshooting and copilot-style support experiences that helped users resolve issues with less manual digging.',
+      'Designed chat-driven workflows and copilot-style experiences that made enterprise support journeys more intuitive and efficient.',
     bullets: [
-      'Mapped friction points in support journeys and translated them into assistive interface concepts.',
-      'Simulated automated guidance and response flows to validate how intelligent UX could improve efficiency.',
-      'Presented prototypes to stakeholders to shape product direction through concrete interaction models.',
+      'Mapped workflow friction into assistive UI patterns and intelligent interaction models.',
+      'Combined business needs, interaction design, and technical feasibility in working demos.',
+      'Helped shape product direction through stakeholder-ready interactive solutions.',
     ],
   },
   {
-    title: 'Enterprise front-end architecture',
-    outcome: '~20% performance gains on key web experiences',
+    title: 'Financial dashboards and configurable analytics',
+    outcome: 'Clearer decision support for analytics-heavy workflows',
     summary:
-      'Led architecture and implementation for modular applications where scalability, usability, and maintainability all mattered at once.',
+      'Built data-intensive dashboards and visualization layers using Recharts and D3.js for financial services and enterprise platforms.',
     bullets: [
-      'Standardized front-end patterns across teams to improve consistency and reduce delivery overhead.',
-      'Optimized performance and interaction quality for high-traffic digital products.',
-      'Bridged design intent and engineering execution with high-fidelity implementations.',
+      'Designed reusable visualization patterns for different reporting and workflow needs.',
+      'Focused on clarity, interaction quality, and faster access to business insights.',
+      'Connected analytics UX with scalable frontend architecture and maintainable delivery.',
     ],
   },
 ];
@@ -145,63 +145,63 @@ export const caseStudies: CaseStudy[] = [
 export const testimonialThemes: TestimonialTheme[] = [
   {
     quote:
-      'Known for turning vague product ideas into working experiences quickly, which helps teams align faster and make better roadmap decisions.',
-    role: 'Representative product/design feedback theme',
-  },
-  {
-    quote:
-      'Brings architecture depth without losing the craft of implementation—strong at connecting design, engineering, and delivery.',
-    role: 'Representative engineering leadership feedback theme',
-  },
-  {
-    quote:
-      'Especially effective in early-stage UX exploration where prototypes need to be both believable and technically grounded.',
+      'Known for turning complex requirements into production-ready interfaces that balance business goals, engineering quality, and user experience.',
     role: 'Representative stakeholder feedback theme',
+  },
+  {
+    quote:
+      'Brings architecture depth, strong frontend craft, and the ability to move from Figma or abstract requirements into scalable working software.',
+    role: 'Representative product and engineering feedback theme',
+  },
+  {
+    quote:
+      'Especially effective on analytics-heavy and workflow-heavy products where UI quality, system thinking, and delivery speed all matter.',
+    role: 'Representative delivery leadership feedback theme',
   },
 ];
 
 export const blogPosts: BlogPost[] = [
   {
-    title: 'How AI-first UX engineering changes the prototype-to-product loop',
+    title: 'Building AI-powered interfaces that feel useful in enterprise products',
     category: 'AI + Product Delivery',
-    summary: 'A practical view on using copilots, prompt systems, and working demos to reduce ambiguity and accelerate UX validation.',
+    summary: 'Practical lessons from designing chat-driven workflows and assistive UX that reduce friction instead of adding noise.',
   },
   {
-    title: 'From Figma to credible product demo: what enterprise teams actually need',
-    category: 'Design to Code',
-    summary: 'Lessons from translating interaction ideas into high-fidelity implementations that product teams can react to immediately.',
+    title: 'What makes financial dashboards actually useful',
+    category: 'Analytics UX',
+    summary: 'A frontend perspective on configurable analytics, visual hierarchy, and decision-support design for data-heavy products.',
   },
   {
-    title: 'Designing support experiences that feel intelligent, not scripted',
-    category: 'Intelligent Interfaces',
-    summary: 'Patterns for building AI-assisted guidance, troubleshooting flows, and copilot-like interactions that genuinely reduce user friction.',
+    title: 'Translating business requirements and Figma designs into scalable frontend systems',
+    category: 'Frontend Architecture',
+    summary: 'How strong component systems and design-to-code discipline help enterprise teams ship faster without losing quality.',
   },
 ];
 
 export const skills: TextItem[] = [
   {
-    title: 'Frontend & UX engineering',
-    body: 'React, TypeScript, Next.js, Redux, Micro-Frontends, design systems, component libraries',
+    title: 'Frontend engineering',
+    body: 'React, Next.js, TypeScript, JavaScript, Redux, Micro-Frontends, Component Libraries',
   },
   {
-    title: 'AI & intelligent interfaces',
-    body: 'LLMs, copilot-style interfaces, AI-assisted workflows, prompt engineering, Slingshot, GitHub Copilot',
+    title: 'Styling and UI systems',
+    body: 'Tailwind CSS, CSS Modules, Mantine, Chakra UI, Ant Design, Shadcn/UI, Design Systems',
   },
   {
-    title: 'Prototyping & experimentation',
-    body: 'Vite, Next.js, interaction design implementation, Figma to code, usability iteration, working demos',
+    title: 'Data visualization',
+    body: 'Recharts, D3.js, Chart.js, Interactive Dashboards',
   },
   {
-    title: 'Testing & quality',
+    title: 'AI-assisted development',
+    body: 'LLMs, AI-assisted workflows, Copilot-style interfaces, prompt engineering, Sapient Slingshot, GitHub Copilot',
+  },
+  {
+    title: 'Testing and quality',
     body: 'Jest, React Testing Library, Cypress',
   },
   {
-    title: 'Cloud, devops & delivery',
-    body: 'AWS, Azure, GCP, GitHub Actions, Jenkins',
-  },
-  {
-    title: 'Accessibility & performance',
-    body: 'Mantine, Chakra UI, Ant Design, Shadcn/UI, WAVE, AudioEye, Lighthouse, Core Web Vitals',
+    title: 'Performance, accessibility, and delivery',
+    body: 'Lighthouse, SpeedCurve, Core Web Vitals, WAVE, AudioEye, Responsive Design, AWS, Azure, GCP, GitHub Actions, Jenkins, REST, GraphQL, Java, SQL',
   },
 ];
 
@@ -219,11 +219,11 @@ export const contactLinks: ContactLink[] = [
   {
     href: 'https://linkedin.com/in/manoj-mehta-4486302',
     label: 'LinkedIn',
-    icon: 'fa-brands fa-linkedin',
+    icon: 'fa-brands fa-linkedin-in',
     external: true,
   },
   {
-    href: 'https://github.com/mehmanoj',
+    href: 'https://github.com/',
     label: 'GitHub',
     icon: 'fa-brands fa-github',
     external: true,

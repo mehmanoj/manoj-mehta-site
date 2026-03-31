@@ -6,8 +6,8 @@ export function ArticlesPage() {
   return (
     <div className="narrow-page">
       <ListingHero
-        title="Thoughts on web development, digital experiences, and AI-assisted product work."
-        description="A focused collection of article topics aligned to my work in UX engineering, frontend architecture, intelligent interfaces, and design-to-code execution."
+        title="Thoughts on AI product UI, analytics dashboards, and scalable frontend systems."
+        description="A focused collection of article topics aligned to my work in enterprise frontend engineering, design-to-code execution, data visualization, and AI-assisted product delivery."
       />
 
       <div className="article-listing">

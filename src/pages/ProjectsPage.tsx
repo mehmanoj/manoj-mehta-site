@@ -7,8 +7,8 @@ export function ProjectsPage() {
     <div className="narrow-page">
       <ListingHero
         className="projects-hero"
-        title="Projects, initiatives, and representative case-study work."
-        description="A selection of architecture, prototyping, intelligent-interface, and delivery work shaped by my experience across enterprise platforms."
+        title="Selected projects, platform work, and representative case studies."
+        description="A focused set of AI interface, analytics dashboard, design-to-code, and frontend architecture work shaped by my experience across enterprise platforms."
       />
 
       <div className="card-grid">

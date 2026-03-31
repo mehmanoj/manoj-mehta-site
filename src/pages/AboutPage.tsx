@@ -7,27 +7,20 @@ export function AboutPage() {
     <div className="page-stack">
       <section className="about-hero">
         <div className="about-copy">
-          <h1>I build scalable UI platforms and front-end architecture that help enterprise teams move faster.</h1>
+          <h1>I build AI-powered interfaces, data-rich dashboards, and scalable frontend systems for enterprise products.</h1>
           <p>
-            I’m a senior software engineer and hands-on frontend architect based in Irvine, with 20+ years of
-            experience building scalable web platforms across telecommunications, financial services, retail,
-            and Fortune 500 environments.
+            I’m a senior frontend engineer and hands-on architect based in Irvine, with 20+ years of experience
+            building enterprise web applications across financial services and other large-scale industries.
           </p>
           <p>
-            My work centers on platform engineering: modernizing front-end stacks, shaping reusable UI systems,
-            improving developer productivity, and building architecture that supports faster delivery without
-            sacrificing performance, accessibility, or maintainability.
+            My recent work focuses on AI product UI engineering: chat-driven workflows, copilot-style experiences,
+            configurable analytics dashboards, and modern frontend systems built with React, Next.js, and TypeScript.
           </p>
           <p>
-            Across my recent work, that has included React and TypeScript micro-frontend platforms, digital
-            commerce systems, AI-powered collaboration experiences, stronger CI/CD pipelines, and testing and
-            component-library foundations that make large teams more effective.
+            I partner closely with business stakeholders, product teams, designers, and engineers to translate
+            requirements into production-ready interfaces that are scalable, accessible, and aligned with real
+            business workflows.
           </p>
-
-          <section className="section-blockless">
-            <h2>Work Experience</h2>
-            <Timeline items={workExperience} />
-          </section>
         </div>
 
         <aside className="about-side">
@@ -55,6 +48,11 @@ export function AboutPage() {
             ))}
           </div>
         </aside>
+      </section>
+
+      <section className="section-blockless full-width-section">
+        <h2>Work Experience</h2>
+        <Timeline items={workExperience} />
       </section>
     </div>
   );

@@ -66,6 +66,17 @@ img {
   margin: 0 auto;
 }
 
+
+.page-stack {
+  display: grid;
+  gap: 72px;
+}
+
+.full-width-section {
+  width: min(100%, 940px);
+  margin: 0 auto;
+}
+
 .site-header {
   display: grid;
   grid-template-columns: 48px 1fr 48px;
@@ -259,6 +270,9 @@ main {
 
 .about-side {
   padding-top: 18px;
+  position: sticky;
+  top: 92px;
+  align-self: start;
 }
 
 .hero-photo-card {
@@ -484,6 +498,10 @@ main {
 }
 
 @media (max-width: 960px) {
+  .page-stack {
+    gap: 44px;
+  }
+
   .site-frame {
     padding: 24px 24px 28px;
   }
@@ -495,6 +513,7 @@ main {
 
   .about-side {
     padding-top: 0;
+    position: static;
   }
 
   .card-grid {
