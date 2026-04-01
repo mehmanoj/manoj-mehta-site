@@ -4,9 +4,11 @@
   "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc -b && vite build",
-    "preview": "vite preview"
+    "dev": "node scripts/syncVersionAssets.mjs && node ./node_modules/vite/bin/vite.js",
+    "build": "node ./node_modules/typescript/lib/tsc.js -b && node ./node_modules/vite/bin/vite.js build",
+    "preview": "node ./node_modules/vite/bin/vite.js preview",
+    "predev": "node scripts/syncVersionAssets.mjs",
+    "prebuild": "node scripts/syncVersionAssets.mjs"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.2.1",

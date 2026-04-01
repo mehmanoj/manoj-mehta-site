@@ -1,8 +1,10 @@
+import { siteSettings } from '../../data/siteVersions';
+
 function DownloadButtons() {
   return (
     <div className="flex flex-col gap-3 lg:min-w-[250px]">
       <a
-        href="/Manoj_Mehta_Resume.pdf"
+        href={siteSettings.resumeFiles.pdf}
         download
         className="inline-flex items-center justify-center rounded-xl bg-blue-600 px-4 py-3 text-sm font-semibold text-white hover:bg-blue-700"
       >
@@ -10,7 +12,7 @@ function DownloadButtons() {
       </a>
 
       <a
-        href="/Manoj_Mehta_Resume.docx"
+        href={siteSettings.resumeFiles.docx}
         download
         className="inline-flex items-center justify-center rounded-xl border border-slate-200 bg-white px-4 py-3 text-sm font-semibold text-slate-900 hover:bg-slate-50"
       >

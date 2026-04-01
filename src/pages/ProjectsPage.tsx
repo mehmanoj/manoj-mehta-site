@@ -1,14 +1,15 @@
 import { ListingHero } from '../components/common/ListingHero';
 import { ProjectCard } from '../components/projects/ProjectCard';
 import { projectDetails } from '../data/siteContent';
+import { siteSettings } from '../data/siteVersions';
 
 export function ProjectsPage() {
   return (
     <div className="narrow-page">
       <ListingHero
         className="projects-hero"
-        title="Selected projects, platform work, and representative case studies."
-        description="A focused set of AI interface, analytics dashboard, design-to-code, and frontend architecture work shaped by my experience across enterprise platforms."
+        title={siteSettings.listingHeroes.projects.title}
+        description={siteSettings.listingHeroes.projects.description}
       />
 
       <div className="card-grid">

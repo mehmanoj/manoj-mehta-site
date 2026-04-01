@@ -1,5 +1,6 @@
 import { navItems } from '../../constants/navigation';
 import { RouteLink } from '../common/RouteLink';
+import { siteSettings } from '../../data/siteVersions';
 
 export function SiteFooter() {
   return (
@@ -11,7 +12,7 @@ export function SiteFooter() {
           </RouteLink>
         ))}
       </div>
-      <p>© 2026 Manoj Mehta. All rights reserved.</p>
+      <p>{siteSettings.footerText}</p>
     </footer>
   );
 }

@@ -1,4 +1,5 @@
 import { articleDetails } from '../data/siteContent';
+import { siteSettings } from '../data/siteVersions';
 import { ListingHero } from '../components/common/ListingHero';
 import { RouteLink } from '../components/common/RouteLink';
 
@@ -6,8 +7,8 @@ export function ArticlesPage() {
   return (
     <div className="narrow-page">
       <ListingHero
-        title="Thoughts on AI product UI, analytics dashboards, and scalable frontend systems."
-        description="A focused collection of article topics aligned to my work in enterprise frontend engineering, design-to-code execution, data visualization, and AI-assisted product delivery."
+        title={siteSettings.listingHeroes.articles.title}
+        description={siteSettings.listingHeroes.articles.description}
       />
 
       <div className="article-listing">

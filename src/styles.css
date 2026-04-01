@@ -61,27 +61,23 @@ img {
 .site-footer,
 .about-hero,
 .narrow-page,
-.detail-page {
-  width: min(100%, 940px);
-  margin: 0 auto;
-}
-
-
-.page-stack {
-  display: grid;
-  gap: 72px;
-}
-
-.full-width-section {
+.detail-page,
+.section-full-width {
   width: min(100%, 940px);
   margin: 0 auto;
 }
 
 .site-header {
+  position: sticky;
+  top: 0;
+  z-index: 40;
   display: grid;
   grid-template-columns: 48px 1fr 48px;
   align-items: center;
   gap: 20px;
+  padding: 8px 0 10px;
+  background: linear-gradient(180deg, rgba(17, 34, 64, 0.98), rgba(17, 34, 64, 0.94));
+  backdrop-filter: blur(10px);
 }
 
 .avatar-link {
@@ -141,7 +137,7 @@ img {
 }
 
 main {
-  padding-top: 66px;
+  padding-top: 44px;
 }
 
 .about-hero {
@@ -179,6 +175,10 @@ main {
 }
 
 .section-blockless {
+  margin-top: 82px;
+}
+
+.section-full-width {
   margin-top: 82px;
 }
 
@@ -270,9 +270,6 @@ main {
 
 .about-side {
   padding-top: 18px;
-  position: sticky;
-  top: 92px;
-  align-self: start;
 }
 
 .hero-photo-card {
@@ -498,10 +495,6 @@ main {
 }
 
 @media (max-width: 960px) {
-  .page-stack {
-    gap: 44px;
-  }
-
   .site-frame {
     padding: 24px 24px 28px;
   }
@@ -513,7 +506,6 @@ main {
 
   .about-side {
     padding-top: 0;
-    position: static;
   }
 
   .card-grid {
@@ -528,12 +520,13 @@ main {
   }
 
   .site-frame {
-    padding: 18px 18px 28px;
+    padding: 12px 18px 28px;
   }
 
   .site-header {
     grid-template-columns: 38px 1fr 38px;
     gap: 12px;
+    padding-top: 6px;
   }
 
   .nav-pill {
