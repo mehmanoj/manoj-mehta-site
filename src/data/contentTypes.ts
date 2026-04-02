@@ -22,7 +22,7 @@ export type VersionedResumeData = {
   contactLinks: ContactLink[];
 };
 export type SiteVersionConfig = {
-  key: 'master' | 'v2';
+  key: 'master' | 'v1' | 'v2';
   label: string;
   profileTitle: string;
   heroHeading: string;
@@ -38,6 +38,6 @@ export type SiteVersionConfig = {
   projectDetails: ProjectItem[];
   usesSections: UsesSection[];
   resumePdf: string;
-  resumeDocx: string;
+  resumeDocx?: string;
   data: VersionedResumeData;
 };
