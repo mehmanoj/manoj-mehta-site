@@ -1,200 +1,216 @@
-import type { DetailItem, ProjectItem, UsesSection, WorkExperienceItem } from '../../types/site';
+import type { SiteVersionConfig } from '../contentTypes';
+import { v2ResumeData } from './v2ResumeData';
 
-export const workExperience: WorkExperienceItem[] = [
-  {
-    date: '2018 — Present',
-    role: 'Frontend Architect',
-    company: 'Publicis Sapient',
-    body:
-      'Lead architecture and frontend delivery for enterprise platforms, with current work focused on AI-powered interfaces, analytics dashboards, and stakeholder-driven product experiences.',
-    bullets: [
-      'Current project: AI Product UI Engineering for the GMR Platform — built AI-powered user interfaces, chat-driven workflows, and analytics dashboards for enterprise support use cases.',
-      'Delivered data-intensive UI solutions for Capital Group, Franklin Templeton, Empower, and Citigroup using Recharts and D3.js.',
-      'Partnered with business stakeholders, product teams, and engineers to gather requirements, translate workflows into technical specifications, and define scalable frontend and platform solutions.',
-    ],
-  },
-  {
-    date: '2011 — 2018',
-    role: 'Senior UI Engineer',
-    company: 'Publicis Sapient',
-    body:
-      'Built scalable single-page applications and enterprise frontends for financial services platforms with strong emphasis on usability, accessibility, and maintainability.',
-    bullets: [
-      'Integrated frontend applications with backend services and enterprise systems supporting business-critical workflows.',
-      'Introduced testing and CI/CD practices that improved release quality and reduced regression issues.',
-      'Partnered with design teams to translate product and UX designs into high-quality, production-ready interfaces.',
-    ],
-  },
-  {
-    date: '2005 — 2011',
-    role: 'Consultant',
-    company: 'Fidelity International',
-    body:
-      'Developed financial dashboards, reporting interfaces, and data-visualization tools that helped stakeholders interpret investment data and make informed decisions.',
-    bullets: [
-      'Built financial applications and reporting experiences aligned with business decision-making workflows.',
-      'Translated business requirements into scalable technical solutions in a financial-services environment.',
-      'Developed strong foundations in data visualization, Java, SQL, and enterprise delivery.',
-    ],
-  },
-];
-
-export const articleDetails: DetailItem[] = [
-  {
-    slug: 'designing-chat-driven-workflows',
-    title: 'Designing chat-driven workflows for enterprise products',
-    category: 'AI + Product Delivery',
-    summary:
-      'How to use chat-based interaction patterns to reduce friction, guide users through complex tasks, and still preserve product clarity.',
-    body: [
-      'Chat-driven workflows become valuable when they reduce the effort required to understand what to do next. In enterprise settings, that often means combining conversation with structure: clear next actions, context, and links back to the underlying workflow.',
-      'The most effective interfaces are not just conversational shells. They integrate task state, supporting data, and decision context so users can move faster without losing confidence in what the system is doing.',
-      'For product teams, the key is to design chat interactions as one part of a broader UI system rather than as a replacement for every other interface pattern.',
-    ],
-    bullets: [
-      'Use conversation where it simplifies decisions, not where it adds overhead.',
-      'Blend chat with data views, workflow state, and clear next actions.',
-      'Treat conversational UX as a product system, not a novelty layer.',
-    ],
-  },
-  {
-    slug: 'what-makes-a-dashboard-useful',
-    title: 'What makes a dashboard useful in financial services',
-    category: 'Data Visualization',
-    summary:
-      'Dashboards become valuable when they support interpretation, prioritization, and action — not when they simply display more charts.',
-    body: [
-      'The real challenge in financial dashboards is deciding which information deserves attention and how interaction design should support decision-making under time pressure. Hierarchy, grouping, and defaults matter as much as the charts themselves.',
-      'Reusable visualization patterns help teams move faster, but they only work when paired with an understanding of the workflow around the data: what users are comparing, what they are trying to explain, and what next steps the product should support.',
-      'Good dashboard work combines technical implementation with product judgment, especially in enterprise settings where multiple stakeholders care about the same information in different ways.',
-    ],
-    bullets: [
-      'Prioritize interpretation and next actions over visual density.',
-      'Use reusable chart patterns without losing workflow-specific clarity.',
-      'Design dashboards for business decisions, not only for reporting.',
-    ],
-  },
-  {
-    slug: 'from-figma-to-production-enterprise-ui',
-    title: 'From Figma to production-ready enterprise UI',
-    category: 'Design to Code',
-    summary:
-      'Bridging design and engineering requires more than visual fidelity; it requires scalable systems, implementation realism, and strong collaboration.',
-    body: [
-      'Production-ready interfaces come from translating design intent into components, states, data behaviors, and accessibility requirements that can hold up under real product constraints. The work is as much about systems thinking as visual implementation.',
-      'When teams treat design handoff as a shared product conversation rather than a one-way spec, it becomes easier to resolve ambiguity earlier and build interfaces that are both more polished and more maintainable.',
-      'That is especially true for configurable dashboards, analytics-heavy interfaces, and AI-powered experiences where the interaction model is often as important as the visual language.',
-    ],
-    bullets: [
-      'Preserve design intent while building for scale and maintainability.',
-      'Use handoff to resolve ambiguity early, not after implementation.',
-      'Build UI systems that support configurability, quality, and reuse.',
-    ],
-  },
-];
-
-export const projectDetails: ProjectItem[] = [
-  {
-    slug: 'ai-product-ui-engineering',
-    title: 'AI Product UI Engineering',
-    subtitle: 'Publicis Sapient · Current GMR Platform work',
-    summary:
-      'Designed and built AI-powered interfaces, chat-driven workflows, and analytics dashboards for enterprise support experiences.',
-    impact: 'Reduced UI development effort by about 30% while improving clarity and speed across delivery conversations.',
-    body: [
-      'This work focused on shaping AI-powered frontend experiences around real workflow friction. Rather than treating AI as a separate layer, the interface design centered on where users needed guidance, decisions, and faster access to context.',
-      'The resulting product concepts combined chat-driven interactions, supporting analytics views, and reusable frontend patterns that could scale across broader enterprise use cases.',
-      'A parallel goal was improving the delivery process itself through AI-assisted development, making it easier to move from concept to implementation with less manual effort.',
-    ],
-    bullets: [
-      'Partnered with stakeholders and platform teams to translate business needs into technical solutions.',
-      'Built chat-based and copilot-style experiences that improved user efficiency.',
-      'Used Slingshot and automated code-generation approaches to accelerate UI delivery.',
-    ],
-    tags: ['AI product UI', 'Chat workflows', 'Slingshot', 'Stakeholder collaboration'],
-    image: '/project-ai-first-ux-engineering-initiative.png',
-  },
-  {
-    slug: 'financial-analytics-dashboards',
-    title: 'Financial Analytics Dashboards',
-    subtitle: 'Capital Group, Franklin Templeton, Empower, Citigroup',
-    summary:
-      'Built scalable analytics interfaces and reusable visualization layers for financial-services clients working with complex data and reporting needs.',
-    impact: 'Improved how business users interpreted data and moved from reporting to action.',
-    body: [
-      'Financial analytics work requires more than rendering charts. It depends on understanding which comparisons matter, how workflows differ across users, and how interaction patterns can make dense information easier to navigate.',
-      'Across multiple financial-services clients, the dashboard work centered on reusable visualization layers built with Recharts and D3.js, combined with frontend systems that could support evolving reporting needs.',
-      'The strongest results came from balancing technical reuse with business-specific clarity so teams could move quickly without producing generic interfaces.',
-    ],
-    bullets: [
-      'Delivered dashboard and analytics interfaces using Recharts and D3.js.',
-      'Supported multiple business workflows with configurable visualization patterns.',
-      'Focused on clarity, hierarchy, and decision-support in data-rich experiences.',
-    ],
-    tags: ['Recharts', 'D3.js', 'Financial services', 'Dashboards'],
-    image: '/project-financial-analytics-visualization.png',
-  },
-  {
-    slug: 'configurable-enterprise-ui-systems',
-    title: 'Configurable Enterprise UI Systems',
-    subtitle: 'Reusable architecture across business workflows',
-    summary:
-      'Created modular frontend patterns, reusable component libraries, and configurable dashboard frameworks that supported scalable delivery.',
-    impact: 'Improved maintainability, consistency, and cross-team delivery across enterprise platforms.',
-    body: [
-      'In large enterprise products, configurable UI patterns often matter as much as any single feature. They reduce duplication, support multiple workflows, and create more resilient frontend systems as teams and requirements grow.',
-      'This work combined design systems, reusable visualization layers, and platform-aware frontend architecture so teams could maintain product quality while delivering faster.',
-      'The value was practical: a stronger base for design handoff, implementation, documentation, and ongoing product evolution.',
-    ],
-    bullets: [
-      'Built reusable component libraries and design systems for maintainable delivery.',
-      'Created configurable dashboard patterns to support different reporting contexts.',
-      'Aligned architecture decisions with business workflows and team needs.',
-    ],
-    tags: ['Configurable UI', 'Design systems', 'Component libraries', 'Architecture'],
-    image: '/project-modular-web-platforms.png',
-  },
-];
-
-export const usesSections: UsesSection[] = [
-  {
-    title: 'Frontend application stack',
-    items: [
-      'React, Next.js, TypeScript, JavaScript, and modular frontend patterns for scalable product interfaces',
-      'Tailwind CSS, CSS Modules, Mantine, Chakra UI, Ant Design, and Shadcn/UI depending on product constraints',
-      'Component libraries and design systems built for maintainability and cross-team consistency',
-    ],
-  },
-  {
-    title: 'Analytics and visualization',
-    items: [
-      'Recharts, D3.js, and Chart.js for interactive dashboards and configurable reporting interfaces',
-      'Reusable visualization patterns to support multiple business workflows and data contexts',
-      'A practical focus on hierarchy, readability, and decision support in analytics-heavy experiences',
-    ],
-  },
-  {
-    title: 'AI-assisted product delivery',
-    items: [
-      'Sapient Slingshot, GitHub Copilot, and structured prompt workflows to accelerate design-to-code execution',
-      'Chat-driven workflows and copilot-style experiences shaped around real user friction and task flows',
-      'Figma-to-code and design handoff patterns that shorten the path from concept to production UI',
-    ],
-  },
-  {
-    title: 'Quality, accessibility, and performance',
-    items: [
-      'Jest, React Testing Library, and Cypress for confidence in frontend delivery',
-      'WAVE, AudioEye, responsive design, and usability standards for accessible interfaces',
-      'Lighthouse, Core Web Vitals, and performance-focused implementation for production-ready applications',
-    ],
-  },
-  {
-    title: 'Delivery and integration context',
-    items: [
-      'REST, GraphQL, Java, and SQL for collaboration with backend systems and platform services',
-      'AWS, Azure, GCP, GitHub Actions, and Jenkins across enterprise delivery environments',
-      'Internal documentation, knowledge sharing, and reusable patterns to support distributed teams',
-    ],
-  },
-];
+export const v2SiteContent: SiteVersionConfig = {
+  key: 'v2',
+  label: 'V2',
+  profileTitle: 'Senior UX Engineer and hands-on frontend architect',
+  heroHeading: 'I prototype and build AI-assisted product experiences for enterprise teams.',
+  heroIntro: [
+    'I’m a senior UX engineer and hands-on frontend architect focused on rapidly translating product ideas into credible digital experiences.',
+    'My work sits at the intersection of design, engineering, and intelligent workflows — from Figma-to-code implementation to AI-assisted support concepts and prototype-led product validation.',
+    'I use modern frontend architecture, reusable systems, and AI-driven delivery workflows to help teams move faster, reduce friction, and explore new product directions with working software.',
+  ],
+  articlesHeading: 'Thoughts on web development, digital experiences, and AI-assisted product work.',
+  articlesIntro: 'A focused collection of article topics aligned to UX engineering, frontend architecture, intelligent interfaces, and design-to-code execution.',
+  projectsHeading: 'Projects, initiatives, and representative case-study work.',
+  projectsIntro: 'A selection of architecture, prototyping, intelligent-interface, and delivery work shaped by the experience on my résumé.',
+  usesHeading: 'What I use to design, prototype, build, and ship.',
+  usesIntro: 'This page mirrors the reference-site structure, with content tailored to UX engineering, AI-assisted product work, and modern front-end delivery.',
+  workExperience: [
+    {
+      date: '2018 — Present',
+      role: 'Front-End Architect',
+      company: 'Publicis Sapient',
+      body: 'Lead technical architecture and hands-on frontend delivery for enterprise platforms while exploring AI-assisted UX workflows and prototype-led product execution.',
+      bullets: [
+        'Reduced UI development effort through AI-assisted workflows, automated code generation, and reusable engineering patterns.',
+        'Built working demos and prototype systems that helped teams validate product ideas faster.',
+        'Combined front-end architecture, design-to-code execution, and intelligent-interface exploration across enterprise delivery contexts.',
+      ],
+    },
+    {
+      date: '2011 — 2018',
+      role: 'Senior UI Engineer',
+      company: 'Publicis Sapient',
+      body: 'Led frontend development for enterprise platforms with focus on usability, accessibility, and strong engineering execution.',
+      bullets: [
+        'Delivered scalable single-page applications for data-rich business workflows.',
+        'Built accessible component patterns and reusable UI foundations.',
+        'Improved release quality through testing, CI/CD, and stronger implementation discipline.',
+      ],
+    },
+    {
+      date: '2005 — 2011',
+      role: 'Consultant',
+      company: 'Fidelity International',
+      body: 'Built dashboards and visualization tools that helped stakeholders understand business data more clearly and act with confidence.',
+      bullets: [
+        'Designed data-rich user experiences with strong emphasis on clarity.',
+        'Translated business requirements into scalable technical solutions.',
+        'Built a strong foundation in finance, Java, SQL, and enterprise product delivery.',
+      ],
+    },
+  ],
+  articleDetails: [
+    {
+      slug: 'ai-first-ux-engineering',
+      title: 'How AI-first UX engineering changes the prototype-to-product loop',
+      category: 'AI + Product Delivery',
+      summary: 'A practical framework for reducing ambiguity with working demos, prompt systems, and AI-assisted implementation.',
+      body: [
+        'The most valuable change AI brings to product teams is not raw code generation. It is compression of the feedback loop between idea, implementation, and validation. When design concepts become believable working demos early, teams can react to product behavior instead of debating abstractions.',
+        'That shift matters most in enterprise environments where multiple stakeholders shape requirements. AI-assisted workflows make it easier to move from Figma, notes, and backlog items into something interactive enough to test the real user journey.',
+        'The strongest results come when these tools are turned into repeatable systems. Prompt patterns, reusable front-end primitives, and prototype conventions become leverage for the team instead of isolated individual wins.',
+      ],
+      bullets: [
+        'Use AI to shorten the concept-to-demo cycle, not to bypass product thinking.',
+        'Anchor feedback around working interfaces instead of static documents.',
+        'Turn successful prompt patterns into shared delivery workflows.',
+      ],
+    },
+    {
+      slug: 'figma-to-credible-demo',
+      title: 'From Figma to credible product demo: what enterprise teams actually need',
+      category: 'Design to Code',
+      summary: 'Why fidelity, interaction quality, and implementation realism matter when prototypes are used to shape decisions.',
+      body: [
+        'A prototype only influences direction when stakeholders believe it. That means it needs enough visual fidelity, interaction logic, and technical realism to feel close to a shippable experience.',
+        'The best prototype work lives between design craft and engineering rigor. It respects spacing, states, and motion while also reflecting how data, component structure, and system behavior will really work.',
+        'For enterprise teams, credibility is often the difference between a prototype being treated as inspiration and being treated as a genuine decision-making tool.',
+      ],
+      bullets: [
+        'Preserve design intent while making realistic engineering tradeoffs visible.',
+        'Focus on flows, state changes, and user decision points rather than only visuals.',
+        'Build prototypes that can evolve into implementation rather than being thrown away.',
+      ],
+    },
+    {
+      slug: 'designing-intelligent-support-experiences',
+      title: 'Designing support experiences that feel intelligent, not scripted',
+      category: 'Intelligent Interfaces',
+      summary: 'Patterns for AI-assisted troubleshooting and guidance that reduce friction without creating robotic experiences.',
+      body: [
+        'Users do not want an AI layer for its own sake. They want clarity, faster resolution, and less effort. Support interfaces feel intelligent when they help users move forward with context-sensitive guidance instead of generic scripted responses.',
+        'That requires mapping where friction actually occurs, then designing assistance around decision points, next-best actions, and understandable explanations.',
+        'The most effective support experiences combine strong interaction design with believable automation. The interface should make users feel more capable, not more dependent.',
+      ],
+      bullets: [
+        'Model assistance around real workflow friction points.',
+        'Design for clarity, next actions, and user confidence.',
+        'Use AI to reduce manual digging, not to add conversational overhead.',
+      ],
+    },
+  ],
+  projectDetails: [
+    {
+      slug: 'ai-first-ux-engineering-initiative',
+      title: 'AI-First UX Engineering Initiative',
+      subtitle: 'Publicis Sapient · Current focus',
+      summary: 'Leading an AI-first approach to prototyping and UX delivery using Slingshot, Figma-to-code workflows, and reusable implementation patterns.',
+      impact: 'Reduced UI development effort by about 30% and accelerated concept validation.',
+      body: [
+        'This initiative focused on moving beyond ad hoc experimentation and turning AI into a team-level delivery accelerator. The work combined prompt-driven development, custom skills, rapid prototyping, and design-to-code workflows.',
+        'A central goal was making product conversations more concrete. Instead of relying on static discussion, working demos were used to validate interaction models and communicate system behavior clearly to stakeholders.',
+        'The effort also created a foundation for repeatable delivery. Effective patterns could be reused across teams, reducing manual effort and helping ideas move faster from concept to implementation.',
+      ],
+      bullets: [
+        'Introduced Slingshot and AI-assisted workflows into day-to-day UX engineering.',
+        'Used Figma-to-code and structured prompt flows to shorten build cycles.',
+        'Created reusable patterns that improved team productivity beyond a single project.',
+      ],
+      tags: ['AI workflows', 'UX prototyping', 'Slingshot', 'Figma to code'],
+    },
+    {
+      slug: 'enterprise-support-copilot-concepts',
+      title: 'Enterprise Support Copilot Concepts',
+      subtitle: 'AI-assisted user workflows',
+      summary: 'Prototyped copilot-style support experiences and automated troubleshooting flows for enterprise users.',
+      impact: 'Improved self-service direction and reduced reliance on static documentation.',
+      body: [
+        'The challenge was reducing user friction in support-heavy journeys where people had to search through documentation or rely on manual troubleshooting. Instead of treating support as static content, the work reframed it as an interactive guided experience.',
+        'The prototypes simulated agentic and assistive workflows to show how context-aware help could guide users toward resolution. This helped stakeholders evaluate the product opportunity through believable interactions rather than abstract discussions.',
+        'The outcome was a stronger articulation of how intelligent assistance could improve efficiency and user confidence without requiring a fully built AI product from day one.',
+      ],
+      bullets: [
+        'Mapped support friction into guided interaction patterns.',
+        'Used prototype-led storytelling to shape product direction.',
+        'Explored assistive UX that made self-service more practical and efficient.',
+      ],
+      tags: ['Copilot UX', 'Support flows', 'LLMs', 'Enterprise UX'],
+    },
+    {
+      slug: 'modular-web-platforms',
+      title: 'Modular Web Platforms',
+      subtitle: 'Architecture across industries',
+      summary: 'Architected scalable front-end systems and modular web applications for large, high-traffic environments.',
+      impact: 'Improved maintainability, consistency, and performance across multi-team delivery.',
+      body: [
+        'Across enterprise engagements, the work centered on building front-end foundations that scale. That included modular architecture, shared patterns, and implementation discipline that supported multiple teams working on the same platform.',
+        'These systems had to balance speed and quality. Reusable components, stronger testing practices, and performance-minded engineering helped teams move faster without increasing inconsistency or regressions.',
+        'The result was a stronger delivery platform for UX execution: more reliable interfaces, faster iteration, and better alignment between design intent and production behavior.',
+      ],
+      bullets: [
+        'Built reusable design systems and shared UI patterns.',
+        'Improved performance and delivery quality in production environments.',
+        'Enabled scalable front-end execution across complex enterprise teams.',
+      ],
+      tags: ['React', 'TypeScript', 'Design systems', 'Performance'],
+    },
+    {
+      slug: 'financial-analytics-visualization',
+      title: 'Financial Analytics & Visualization',
+      subtitle: 'Consulting and data-rich product work',
+      summary: 'Built dashboards and visualization experiences that made complex data easier to interpret and act on.',
+      impact: 'Supported clearer decision-making for stakeholders working with dense financial information.',
+      body: [
+        'This work focused on clarity. Financial interfaces often suffer when data density overwhelms usability, so the goal was to shape experiences that helped users interpret complex information more effectively.',
+        'The solutions blended technical implementation with information design. Visualization patterns, application structure, and business context had to work together so that dashboards were useful rather than merely data-heavy.',
+        'That foundation continues to inform later work on data-rich enterprise UX, especially in products where workflow efficiency and comprehension matter as much as visual polish.',
+      ],
+      bullets: [
+        'Designed interfaces that improved data visibility and usability.',
+        'Translated business requirements into scalable application behavior.',
+        'Built a strong base in decision-support and data-rich UX.',
+      ],
+      tags: ['Dashboards', 'Visualization', 'Finance', 'Usability'],
+    },
+  ],
+  usesSections: [
+    {
+      title: 'Building',
+      items: [
+        'React and TypeScript for production interfaces and architecture work',
+        'Next.js and Vite for rapid prototyping and modern front-end delivery',
+        'Micro-frontends, design systems, and component libraries for scalable UI platforms',
+      ],
+    },
+    {
+      title: 'AI-assisted workflow',
+      items: [
+        'Sapient Slingshot for AI-first development and prototype acceleration',
+        'GitHub Copilot for implementation support and faster iteration',
+        'Prompt engineering patterns to turn repeatable workflows into team leverage',
+      ],
+    },
+    {
+      title: 'Quality, accessibility, and performance',
+      items: [
+        'Jest, React Testing Library, and Cypress for test coverage and confidence',
+        'WAVE and AudioEye for accessibility validation',
+        'Lighthouse and Core Web Vitals as part of performance optimization work',
+      ],
+    },
+    {
+      title: 'Delivery environment',
+      items: [
+        'GitHub Actions and Jenkins for CI/CD',
+        'AWS, Azure, and GCP exposure across enterprise projects',
+        'REST, GraphQL, Java, and SQL when front-end work needs deeper integration context',
+      ],
+    },
+  ],
+  resumePdf: '/versioned-assets/v2/Manoj_Mehta_Resume.pdf',
+  resumeDocx: '/versioned-assets/v2/Manoj_Mehta_Resume.docx',
+  data: v2ResumeData,
+};

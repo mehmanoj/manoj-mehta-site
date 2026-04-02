@@ -1,6 +1,6 @@
 # Manoj Mehta Website (React + Vite)
 
-This site supports multiple saved content versions so you can keep older resume/site variants in the codebase and publish only the active one selected in `.env`.
+This is a React version of the personal website, set up for automatic deployment to GitHub Pages with the custom domain `manoj-mehta.com`.
 
 ## Local development
 
@@ -15,29 +15,6 @@ npm run dev
 npm run build
 npm run preview
 ```
-
-## Content versioning via `.env`
-
-The active site content is controlled only by `VITE_SITE_VERSION`.
-
-Available versions:
-
-- `v2` → current published version
-- `master` → original baseline version
-
-Create or update `.env`:
-
-```bash
-VITE_SITE_VERSION=v2
-```
-
-Switch to an older version when needed:
-
-```bash
-VITE_SITE_VERSION=master
-```
-
-The inactive versions remain in `src/data/versions/` for future reuse.
 
 ## Auto-deploy on push
 

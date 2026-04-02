@@ -1,63 +1,43 @@
-import type { DetailItem, ProjectItem, UsesSection, WorkExperienceItem } from '../types/site';
-import type { BlogPost, CaseStudy, ContactLink, Metric, Project, TestimonialTheme, TextItem } from './resumeData';
-
-export type SiteVersionKey = 'master' | 'v2';
-
-export type HeroContent = {
-  eyebrow: string;
-  title: string;
-  description: string;
-  badges: string[];
-};
-
-export type AboutContent = {
-  title: string;
-  paragraphs: string[];
-};
-
-export type ListingHeroContent = {
-  title: string;
-  description: string;
-};
-
-export type ResumeFiles = {
-  pdf: string;
-  docx: string;
-};
-
-export type SiteSettings = {
-  personName: string;
-  email: string;
-  phone: string;
-  location: string;
-  website: string;
-  linkedin: string;
-  github?: string;
-  footerText: string;
-  hero: HeroContent;
-  about: AboutContent;
-  listingHeroes: {
-    articles: ListingHeroContent;
-    projects: ListingHeroContent;
-    uses: ListingHeroContent;
-  };
-  resumeFiles: ResumeFiles;
-};
-
-export type SiteContentBundle = {
-  settings: SiteSettings;
+export type Metric = { value: string; label: string };
+export type TextItem = { title: string; body: string };
+export type ProjectCard = { title: string; subtitle: string; body: string };
+export type CaseStudy = { title: string; outcome: string; summary: string; bullets: string[] };
+export type BlogPost = { title: string; category: string; summary: string };
+export type TestimonialTheme = { quote: string; role: string };
+export type ContactLink = { href: string; label: string; icon: string; external?: boolean };
+export type WorkExperience = { date: string; role: string; company: string; body: string; bullets: string[] };
+export type DetailItem = { slug: string; title: string; category: string; summary: string; body: string[]; bullets: string[] };
+export type ProjectItem = { slug: string; title: string; subtitle: string; summary: string; impact: string; body: string[]; bullets: string[]; tags: string[] };
+export type UsesSection = { title: string; items: string[] };
+export type VersionedResumeData = {
   impactMetrics: Metric[];
   achievements: string[];
   experienceBullets: string[];
   platforms: TextItem[];
-  projects: Project[];
+  projects: ProjectCard[];
   caseStudies: CaseStudy[];
   testimonialThemes: TestimonialTheme[];
   blogPosts: BlogPost[];
   skills: TextItem[];
   contactLinks: ContactLink[];
-  workExperience: WorkExperienceItem[];
+};
+export type SiteVersionConfig = {
+  key: 'master' | 'v2';
+  label: string;
+  profileTitle: string;
+  heroHeading: string;
+  heroIntro: string[];
+  articlesHeading: string;
+  articlesIntro: string;
+  projectsHeading: string;
+  projectsIntro: string;
+  usesHeading: string;
+  usesIntro: string;
+  workExperience: WorkExperience[];
   articleDetails: DetailItem[];
   projectDetails: ProjectItem[];
   usesSections: UsesSection[];
+  resumePdf: string;
+  resumeDocx: string;
+  data: VersionedResumeData;
 };
