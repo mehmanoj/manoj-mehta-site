@@ -2,6 +2,8 @@ import fs from 'fs';
 import path from 'path';
 
 const version = (process.env.VITE_SITE_VERSION || process.env.npm_config_site_version || 'master').toLowerCase();
+console.log('process.env.VITE_SITE_VERSION:', process.env.VITE_SITE_VERSION);
+console.log('process.env.npm_config_site_version:', process.env.npm_config_site_version);
 const root = process.cwd();
 const sourceDir = path.join(root, 'versioned-assets', version);
 const publicDir = path.join(root, 'public');
