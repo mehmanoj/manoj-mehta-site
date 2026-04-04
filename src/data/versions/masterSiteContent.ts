@@ -210,7 +210,7 @@ export const masterSiteContent: SiteVersionConfig = {
       ],
     },
   ],
-  resumePdf: '/versioned-assets/master/Manoj_Mehta_Resume.pdf',
-  resumeDocx: '/versioned-assets/master/Manoj_Mehta_Resume.docx',
+  resumePdf: '/Manoj_Mehta_Resume.pdf',
+  resumeDocx: '/Manoj_Mehta_Resume.docx',
   data: masterResumeData,
 };

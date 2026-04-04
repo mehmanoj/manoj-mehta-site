@@ -210,7 +210,7 @@ export const v2SiteContent: SiteVersionConfig = {
       ],
     },
   ],
-  resumePdf: '/versioned-assets/v2/Manoj_Mehta_Resume.pdf',
-  resumeDocx: '/versioned-assets/v2/Manoj_Mehta_Resume.docx',
+  resumePdf: '/Manoj_Mehta_Resume.pdf',
+  resumeDocx: '/Manoj_Mehta_Resume.docx',
   data: v2ResumeData,
 };
