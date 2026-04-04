@@ -181,6 +181,7 @@ function AboutPage() {
           <section className="section-blockless">
             <div className="section-title-row">
               <h2>Work Experience</h2>
+              <span className="version-badge">{siteVersionLabel} version</span>
             </div>
             <div className="timeline-list">
               {workExperience.map((item) => (
