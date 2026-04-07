@@ -1,6 +1,6 @@
 # Manoj Mehta Website (React + Vite)
 
-This is a React version of the personal website, set up for automatic deployment to GitHub Pages with the custom domain `manoj-mehta.com`.
+This is a React version of the personal website, set up for version-specific resume content and assets.
 
 ## Local development
 
@@ -9,23 +9,31 @@ npm install
 npm run dev
 ```
 
+To preview a specific version, pass `VITE_SITE_VERSION` when you start dev or build:
+
+```bash
+VITE_SITE_VERSION=master npm run dev
+VITE_SITE_VERSION=v2 npm run dev
+VITE_SITE_VERSION=v3 npm run dev
+```
+
 ## Production build
 
 ```bash
-npm run build
+VITE_SITE_VERSION=master npm run build
+VITE_SITE_VERSION=v2 npm run build
+VITE_SITE_VERSION=v3 npm run build
 npm run preview
 ```
 
-## Auto-deploy on push
+The `predev` and `prebuild` scripts copy the matching versioned resume assets from `versioned-assets/<version>/` into `public/` before the site starts or builds.
 
-A GitHub Actions workflow is included in `.github/workflows/deploy.yml`.
+## Available versions
 
-After you push this project to GitHub and enable **GitHub Pages → Build and deployment → Source = GitHub Actions**, every push to `main` will automatically rebuild and deploy the site.
+- `master`
+- `v2`
+- `v3`
 
 ## Custom domain
 
-The `public/CNAME` file is included, so GitHub Pages will keep serving the site from:
-
-- `https://manoj-mehta.com`
-
-Make sure your GoDaddy DNS still points to GitHub Pages.
+The `public/CNAME` file is included, so the site can continue serving from `https://manoj-mehta.com`.
